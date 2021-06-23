@@ -1,18 +1,15 @@
 package cl.bgmp;
 
-import cl.bgmp.doubles.DoubleLinkedList;
 import cl.bgmp.single.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
-        // testLinkedList();
-        testDoubleLinkedList();
+        testLinkedList();
     }
 
     public static void testLinkedList() {
         LinkedList list = new LinkedList();
-
         list.addStart(1);
         list.addLast(2);
         list.addLast(3);
@@ -38,12 +35,7 @@ public class Main {
         System.out.println(list.toString());
     }
 
-    public static void testDoubleLinkedList() {
-        DoubleLinkedList list = new DoubleLinkedList();
-        list.addStart(1);
-        list.addStart(2);
-        list.addLast(3);
+    public void testDoubleLinkedList() {
 
-        System.out.println(list);
     }
 }
